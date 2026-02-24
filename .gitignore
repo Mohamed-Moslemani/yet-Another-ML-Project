@@ -1,0 +1,8 @@
+/data/
+!.gitkeep
+.env.dev
+.env.prod
+**/__pycache__/
+**/.vscode/
+
+/venv/
