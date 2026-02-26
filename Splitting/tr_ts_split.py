@@ -1,4 +1,4 @@
-
+from sklearn.model_selection import train_test_split
 class Tr_Ts_Split:
     def __init__(self, data, target_column, test_size=0.2, random_state=42):
         self.data = data
@@ -7,7 +7,6 @@ class Tr_Ts_Split:
         self.random_state = random_state
     
     def split(self):
-        from sklearn.model_selection import train_test_split
         
         X = self.data.drop(columns=[self.target_column])
         y = self.data[self.target_column]
